@@ -13,7 +13,7 @@ const ChatContainer = () => {
     useEffect(() => {
         console.log("ChatContainer useEffect");
         async function FetchChats() {
-            const response = await fetch("http://3.111.128.67/assignment/chat?page=0");
+            const response = await fetch("http://3.111.128.67/assignment/chat?page=1");
             const data = await response.json();
             const chatmsgs = await data.chats;
             // console.log(chats);
@@ -49,7 +49,7 @@ const ChatContainer = () => {
                         <div className="box box-warning direct-chat direct-chat-warning">
                             <ChatHeader />
                             <TripHeader />
-                            <ChatLog chats={chats} setChats={setChats} />
+                            <ChatLog chats={chats} />
                             <ChatInput message={message} setMessage={setMessage} handleSubmit={handleSubmit} />
                         </div>
                     </div>
