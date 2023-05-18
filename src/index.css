@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.padding,
+.chat-bar,
+.box-warning,
+.direct-chat {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  margin: "0";
+  padding: "1%";
+  min-width: "96%";
+  border: "1px solid black";
+}
+
+.trip-details {
+  margin-top: 16px;
+}
+
+
+.left-text-msg {
+  border-radius: 12px !important;
+  border-top-left-radius: 0px !important;
+}
+
+.right-text-msg {
+  border-radius: 12px !important;
+  border-bottom-right-radius: 0px !important;
+}
